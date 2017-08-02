@@ -1,0 +1,30 @@
+#pj-imdb.postbox{border:none;padding:0;box-shadow:none;background:transparent}
+#pj-imdb.postbox .handlediv,#pj-imdb.postbox > h2{display:none}
+#pj-imdb.postbox .inside{padding:0!important;margin:0}
+.imdb-box ::-moz-selection{color:#333;background-color:#f1cc0f}
+.imdb-box ::selection{color:#333;background-color:#f1cc0f}
+.imdb-box{color:#fff;overflow:hidden;border-radius:3px;box-shadow:0 1px 1px rgba(0,0,0,.04);background-color:#303030}
+.imdb-box > .head{height:55px;margin:0;padding:0 15px;font-size:16px;font-weight:400;line-height:55px;background-color:#2D2D2D;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.imdb-box > .head > .logo{float:right;width:43px;height:45px;margin-top:4px;background:url(logo.png) no-repeat center center}
+.imdb-box > .search{height:30px;margin:0;padding:0;display:block;position:relative;background-color:rgba(255,255,255,0.05)}
+.imdb-box > .search > div{float:left;width:calc(100% - 50px)}
+.imdb-box > .search > div > input{float:left;color:#fff;height:30px;width:33.333%;margin:0!important;border:none!important;outline:none!important;padding:0 15px;box-shadow:none!important;background-color:transparent!important}
+.imdb-box > .search > #sendAjax{float:right;color:#fff;width:50px;height:30px;cursor:pointer;line-height:3;text-align:center}
+.imdb-box > .search > #sendAjax > img {margin:0;padding:0;border:0;}
+.imdb-box > #result{display:none;overflow:hidden}
+.imdb-box > #result > img{float:left;width:250px;height:auto;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.imdb-box > #result > .content{float:left;padding:10px 20px;width:calc(100% - 290px)}
+.imdb-box > #result > .content > ul{padding:0;margin:0;font-size:13px;font-weight:300;line-height:25px;list-style:none}
+.imdb-box > #result > .content > ul > li > span{color:#888;float:left;width:80px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.imdb-box .error{
+	color: #fff;
+	margin: 0;
+	padding: 0 20px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #dd4b39;
+}
+body.rtl .imdb-box {font-family: 'yekan', Tahoma;font-size:13px;}
+body.rtl .imdb-box > .head > .logo,body.rtl .imdb-box > .search > #sendAjax{float:left;}
+body.rtl .imdb-box > .search > div,body.rtl .imdb-box > .search > div > input,body.rtl .imdb-box > #result > img,body.rtl .imdb-box > #result > .content,body.rtl .imdb-box > #result > .content > ul > li > span{float:right;}
+body.rtl .imdb-box > .search > div > input{font-size:13px;}
